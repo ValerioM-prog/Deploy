@@ -1,72 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple responsive owl carousel</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/main.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <!-- <script src="./_js/productSlider.js" defer></script> -->
+    <script src="./_js/burgerMenu.js" defer></script>
+    <script src="./_js/slideShow.js" defer></script>
+    <title>Document</title>
 </head>
+
+
 <body>
-		
-		<div class="slider">			
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>			
-		</div>
+    <!-- Container start -->
+    <div class="container">        
+        <!-- Header start -->
+        <div class="heading">
+            <!-- Left side of the Heading start -->
+            <div class="left">
+                <!-- BurgerMenu start -->
+                <div class="burgerMenu">
+                    <span></span>
+                </div>
+                <!-- BurgerMenu end -->
+                <img class="logo" src="./_img/TheBusiness_Logo.png" alt="" srcset="">
+            </div>
+            <!-- Left side of the Heading end -->
+            
+            
+            <!-- User Input start -->
+            <div class="right">
+                <!-- Search for tablet and greater start -->
+                <div class="searchBig">
+                    <input type="search" id="site-search" name="q"
+                        aria-label="Search through site content">
+                        <i class="fal fa-search"></i>
+                </div>
+                <!-- Search for tablet and greater end -->
+                <!-- Account start -->
+                <a href="#">
+                    <div class="account">
+                        <i class="fal fa-user fa-lg"></i>
+                        <span>Account</span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </a>
+                <!-- Account end -->
+                <!-- Search Mobile start -->
+                <a href="#">
+                    <div class="searchMobile">
+                        <i class="fal fa-search"></i>
+                    </div>
+                </a>
+                <!-- Search Mobile end-->
+                <!-- Favourites start -->
+                <a href="#">
+                    <div class="favourites">
+                        <i class="fal fa-heart fa-lg"></i>
+                        <span>Favourites</span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </a>
+                <!-- Favourites end -->
+                <!-- Cart Button start -->
+                <a href="#">
+                    <div class="cartButton">
+                        <i class="far fa-shopping-cart fa-lg"></i>
+                        <span>Cart</span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </a>
+                <!-- Cart Button end -->
+            </div>
+            <!-- User Input end -->            
+        </div>
+        <!-- Header end -->
+        <!-- Navigation items for 768px++ start -->
+        <nav class="navMenu">
+            <!-- Burger Menu 2 start -->
+            <div class="burgerMenu-2">
+                <span></span>
+            </div>
+            <!-- Burger Menu 2 end -->
+            <a href="#">Browse</a>
+            <a href="#">Today</a>
+            <a href="#">Services</a>
+            <a href="#">Refurbished</a>
 
-		<div class="slider">			
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>			
-		</div>
+            <a href="#">Support</a>
+        </nav>
+        <!-- Navigation items for 768++ end -->
+        <!-- Main Menu and Picture Slider holder start -->
+        <div class="topHolder">
+            <!-- Opaque background for menu on mobile devices start -->
+            <div class="menuUnderlay"></div>
+            <!-- Opaque background for menu on mobile devices end -->
+            <!-- Main Menu start -->
+            <nav class="mainMenu">
+                <a href="#"><div><i class="fal fa-mobile-android"></i><span>Laptops, Tablets & Phones</span></div></a>
+                <a href="#"><div><i class="fal fa-mouse"></i><span>PC, Periferics & Software</span></div></a>
+                <a href="#"><div><i class="fal fa-camera"></i><span>TV, Audio-Video & Photo</span></div></a>
+                <a href="#"><div><i class="fal fa-washer"></i><span>Household Items</span></div></a>
+                <a href="#"><div><i class="fal fa-gamepad"></i><span>Gaming, Books & Office Supplies</span></div></a>
+                <a href="#"><div><i class="fal fa-shopping-bag"></i><span>Groceries</span></div></a>
+                <a href="#"><div><i class="fal fa-tshirt"></i><span>Clothing</span></div></a>
+                <a href="#"><div><i class="fal fa-air-freshener"></i><span>Hygiene & Cosmetics</span></div></a>
+                <a href="#"><div><i class="fal fa-loveseat"></i><span>Home, Garden & DIY</span></div></a>
+                <a href="#"><div><i class="fal fa-baseball"></i><span>Sports</span></div></a>
+                <a href="#"><div><i class="fal fa-car-alt"></i><span>Auto & Moto</span></div></a>
+                <a href="#"><div><i class="fal fa-chess-knight"></i><span>Toys</span></div></a>
+            </nav>
+            <!-- Main Menu end -->
+            <!-- Holder for image slider start -->
+            <div class="imageHolder">
+                <img src="./_img/_imageSlider/0.Holder.png" alt="">  
+                <img src="./_img/_imageSlider/1.Hello.png" class="slide active">
+                <img src="./_img/_imageSlider/2.Welcome.png" class="slide">
+                <img src="./_img/_imageSlider/3.Experience.png" class="slide">
+                <img src="./_img/_imageSlider/4.Enjoy.png" class="slide">              
+            </div>
+            <!-- Holder for image slider end -->
+            <div class="imageButtons">
+                <div class="button active"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+            </div>
 
-		<div class="slider">			
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>			
-		</div>
+            
+        </div>
+        <!-- Main Menu and Picture Slider holder end -->
+        <!-- Features slider start -->
+        <div class="browse">
+            <div class="slider features">            
+                <div class="feature">
+                    <span>You Can</span>
+                </div>
+                <div class="feature">
+                    <span>Slide These</span>
+                </div>
+                <div class="feature">
+                    <span>Features On</span>
+                </div>
+                <div class="feature">
+                    <span>Mobile.</span>
+                </div>
+                <div class="feature">
+                    <span>Thanks!</span>
+                </div>            
+            </div>
+        </div>
+        
+        <!-- Features slider end -->
+        
+        <!-- Products slider start -->
+        <div class="browse">
+            <h1>Slide</h1>
+            <div class="slider products">   
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>                 
+            </div>
+        </div>
+        
+        <!-- Product slider end -->
 
-		<div class="slider">			
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>
-			<div class="product"></div>			
-		</div>
+        <!-- Products slider start -->
+        <div class="browse">
+            <h1>Slide</h1>
+            <div class="slider products">   
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>            
+            </div>
+        </div>
+        <!-- Product slider end -->
 
+        <!-- Products slider start -->
+        <div class="browse">
+            <h1>Slide</h1>
+            <div class="slider products">   
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>            
+            </div>
+        </div>
+        <!-- Product slider end -->
+
+        <div class="footer">
+            <div class="accordion">
+                <div>
+                    <input type="checkbox" name="example-accordion" id="section-services" class="accordion-input">
+                    <label for="section-services" class="accordion-label">Who?</label>
+                    <div class="accordion-content">
+                        <p>Valerio Matei, <br>
+                            Programmer.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="example-accordion" id="section-orders" class="accordion-input">
+                    <label for="section-orders" class="accordion-label">Why?</label>
+                    <div class="accordion-content">
+                        <p>I wanted to showcase my abilities as a web developer, even though I'm not a good designer, just yet.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="example-accordion" id="section-support" class="accordion-input">
+                    <label for="section-support" class="accordion-label">How?</label>
+                    <div class="accordion-content">
+                        <p>Using HTML5, CSS3 and JS. <br>
+                            a
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="example-accordion" id="section-tos" class="accordion-input">
+                    <label for="section-tos" class="accordion-label">Contact</label>
+                    <div class="accordion-content">
+                        <p>You can reach me at GMAIL, YMAIL, Phone. <br>
+                            a
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footmark">
+                <p>Copy of <a href="http://emag.ro">emag.ro</a>, for layout design implementation. DO NOT USE COMMERCIALLY!</p>
+            </div>
+        </div>
+    </div>
+    <!-- Container end -->
 </body>
 </html>
