@@ -398,7 +398,7 @@
 /* User Input Holder */
 .right {
   grid-column: 2;
-  justify-self: right;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: right;
