@@ -398,6 +398,7 @@
 /* User Input Holder */
 .right {
   grid-column: 2;
+  position: relative;
   right: 0;
   width: 100%;
   display: flex;
