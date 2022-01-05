@@ -19,7 +19,8 @@
 
 /* Style for the very first section of the page */
 .heading {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr, 1fr;
   /* Is a container for burger menu mobile and logo */
 }
 @media (min-width: 768px) {
@@ -39,7 +40,6 @@
   }
 }
 .heading .left {
-  justify-self: left;
   display: flex;
   /* Style the Logo */
 }
@@ -421,6 +421,8 @@
 }
 /* User Input Holder */
 .right {
+  grid-column: 2;
+  justify-self: right;
   width: 85%;
   display: flex;
   justify-content: right;
