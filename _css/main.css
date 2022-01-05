@@ -20,12 +20,13 @@
 /* Style for the very first section of the page */
 .heading {
   display: grid;
-  grid-template-columns: 3fr, 1fr;
+  grid-template-columns: 1fr 3fr;
   /* Is a container for burger menu mobile and logo */
 }
 @media (min-width: 768px) {
   .heading {
     margin-bottom: 6px;
+    grid-template-columns: 1fr 6fr;
   }
 }
 @media (min-width: 992px) {
@@ -40,6 +41,8 @@
   }
 }
 .heading .left {
+  grid-column: 1;
+  width: 150px;
   display: flex;
   /* Style the Logo */
 }
@@ -51,33 +54,6 @@
   .heading .left .logo {
     width: 150px;
   }
-}
-.heading .right a {
-  text-decoration: none;
-}
-.heading .right a .account {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.heading .right a .account > span {
-  margin-left: 5px;
-}
-.heading .right a .favourites {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.heading .right a .favourites > span {
-  margin-left: 5px;
-}
-.heading .right a .cartButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.heading .right a .cartButton > span {
-  margin-left: 5px;
 }
 
 /* Burger Menu Style*/
@@ -423,7 +399,7 @@
 .right {
   grid-column: 2;
   justify-self: right;
-  width: 85%;
+  width: 100%;
   display: flex;
   justify-content: right;
 }
@@ -560,12 +536,12 @@
   display: none;
 }
 .searchBig > input {
-  width: 94%;
+  width: 90%;
   height: 100%;
   border-radius: 25px 0 0 25px;
 }
 .searchBig > i {
-  margin-left: 9px;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
