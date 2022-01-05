@@ -400,7 +400,7 @@
   grid-column: 2;
   min-width: 100%;
   display: flex;
-  flex-wrap: wrap-reverse;
+  justify-content: right;
 }
 .right a {
   text-decoration: none;
