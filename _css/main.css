@@ -19,6 +19,7 @@
 
 /* Style for the very first section of the page */
 .heading {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 3fr;
   /* Is a container for burger menu mobile and logo */
